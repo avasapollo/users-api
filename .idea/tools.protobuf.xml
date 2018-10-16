@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProtobufSettings">
+    <option name="includePaths">
+      <list>
+        <option value="$USER_HOME$/protoc/v3.6.1/src" />
+        <option value="$PROJECT_DIR$/../../grpc-ecosystem/grpc-gateway/protoc-gen-swagger/options" />
+        <option value="$PROJECT_DIR$/../../googleapis/googleapis" />
+      </list>
+    </option>
+  </component>
+</project>
