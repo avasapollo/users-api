@@ -1,0 +1,32 @@
+syntax= "proto3";
+
+package web;
+
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+
+service UserService {
+    rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {
+        option (google.api.http) = {
+            post: "/v1/users"
+            body: "*"
+        };
+    }
+}
+
+message CreateUserRequest {
+    string Nickname =1;
+    string Name = 2;
+    string Surname = 3;
+}
+
+message CreateUserResponse {
+    string ID = 1;
+    string Nickname =2;
+    string Name = 3;
+    string Surname = 4;
+    google.protobuf.Timestamp CreatedAt = 5;
+}
+
+
