@@ -1,3 +1,3 @@
 # users-api
 
-work-in-progress
+work-in-progress grpc project
